@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header margin-bottom-medium">
+      <div class="company-logo-box">
+        <a href="index.html" class="company-name"
+          ><ion-icon name="logo-dropbox" class="company-icon"></ion-icon>
+          Sendr</a
+        >
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="./send-package.html" class="main-nav-link">
+              <ion-icon name="paper-plane" class="main-nav-icon"></ion-icon>
+              Send Package
+            </a>
+          </li>
+          <li>
+            <a href="./browse-package.html" class="main-nav-link">
+              <ion-icon name="logo-dropbox" class="main-nav-icon"></ion-icon>
+              Browse Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="search" class="main-nav-icon"></ion-icon>
+              Track Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="wallet" class="main-nav-icon"></ion-icon>
+              Wallet
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-nav-login margin-right-large">
+        <ul class="main-nav-list-login">
+          <li>
+            <a href="#" class="main-nav-link link-login"
+              ><ion-icon name="log-in"></ion-icon> Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-send-package margin-bottom-large">
+        <div class="container flex-col-center">
+          <header class="send-package-header text margin-bottom-small">
+            <h1 class="primary-heading">Send a Package</h1>
+            <p>Fill in the details below to post your package request.</p>
+          </header>
+
+          <div class="send-package-form-container grid">
+            <form action="" method="post" class="send-package-form">
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="origin-city" class="label color"
+                    >Origin City</label
+                  >
+                  <input
+                    type="text"
+                    id="origin-city"
+                    name="origin-city"
+                    placeholder="e.g., Abuja, Kano"
+                    class="input"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="destination-city" class="label color"
+                    >Destination city</label
+                  >
+                  <input
+                    type="text"
+                    id="destination-city"
+                    name="destination-city"
+                    placeholder="e.g., Lagos, Kaduna"
+                    class="input"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="package-size" class="label color"
+                    >Package Size</label
+                  >
+                  <select name="package-size" id="package-size" class="input">
+                    <option value="" disabled selected>Select Size</option>
+                    <option value="small">
+                      Small (e.g., envelope, small box)
+                    </option>
+                    <option value="medium">
+                      Medium (e.g., shoe box, backpack)
+                    </option>
+                    <option value="large">
+                      Large (e.g., suitcase, large box)
+                    </option>
+                  </select>
+                </div>
+                <div class="input-box">
+                  <label for="package-weight" class="label color"
+                    >Package Weight (kg)</label
+                  >
+                  <input
+                    type="number"
+                    id="package-weight"
+                    name="package-weight"
+                    class="input"
+                    placeholder="e.g., 0.1"
+                    min="0.1"
+                    step="0.1"
+                  />
+                </div>
+              </div>
+              <div class="input-box package-description-box">
+                <label for="package-description" class="label color"
+                  >Package Description</label
+                >
+                <textarea
+                  id="package-description"
+                  name="package-description"
+                  rows="6"
+                  class="input input-description"
+                  placeholder="Briefly describe the contents of the package, any special handling instructions, etc."
+                ></textarea>
+              </div>
+              <div class="input-box package-image-box">
+                <label for="package-image" class="label color"
+                  >Package Image (Optional)</label
+                >
+                <input
+                  type="file"
+                  id="package-image"
+                  name="package-image"
+                  class="input package-image-file"
+                  placeholder="Upload an image of the package"
+                  accept="image/*"
+                />
+              </div>
+              <div class="input-box">
+                <label for="your-price" class="label color"
+                  >Your desired price (Naira)</label
+                >
+                <input
+                  type="number"
+                  name="your-price"
+                  id="your-price"
+                  class="input"
+                  min="0"
+                  step="1"
+                  required
+                />
+              </div>
+              <div class="input-box btn-post-package-box">
+                <button type="submit" class="btn-post-package">
+                  <ion-icon name="cube-outline"></ion-icon> Post Package Request
+                </button>
+              </div>
+            </form>
+
+            <form action="" method="post" class="pricing-assistant-form">
+              <header class="pricing-assistant-header">
+                <ion-icon
+                  name="bulb-outline"
+                  class="pricing-assistant-icon"
+                ></ion-icon>
+
+                <h2 class="pricing-heading color">Smart Pricing Assistant</h2>
+              </header>
+              <p class="pricing-text">
+                Let our AI help you find the optimal price for your package.
+                Fill in the details below.
+              </p>
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="origin-city" class="label color"
+                    >Origin City</label
+                  >
+                  <input
+                    type="text"
+                    id="origin-city"
+                    name="origin-city"
+                    class="input"
+                    placeholder="e.g., Abuja, Kano"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="destination-city" class="label color"
+                    >Destination city</label
+                  >
+                  <input
+                    type="text"
+                    id="destination-city"
+                    name="destination-city"
+                    class="input"
+                    placeholder="e.g., Lagos, Kaduna"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="package-size" class="label color"
+                    >Package Size</label
+                  >
+                  <select name="package-size" id="package-size" class="input">
+                    <option value="" disabled selected>Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </div>
+                <div class="input-box">
+                  <label for="package-weight" class="label color"
+                    >Package Weight (kg)</label
+                  >
+                  <input
+                    type="number"
+                    id="package-weight"
+                    name="package-weight"
+                    class="input"
+                    placeholder="e.g., 0.1"
+                    min="0.1"
+                    step="0.1"
+                  />
+                </div>
+              </div>
+              <div>
+                <button type="submit" class="btn-get-price-sug">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                  Get Price Suggestion
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer flex-col-center">
+      <p>&copy; 2025 Sendr. All rights reserved.</p>
+      <nav>
+        <ul class="footer-nav-list">
+          <li><a href="#" class="nav-list-link">Privacy Policy</a></li>
+          <li><a href="#" class="nav-list-link">Terms of Service</a></li>
+          <li><a href="#" class="nav-list-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

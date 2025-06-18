@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header margin-bottom-medium">
+      <div class="company-logo-box">
+        <a href="index.html" class="company-name"
+          ><ion-icon name="logo-dropbox" class="company-icon"></ion-icon>
+          Sendr</a
+        >
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="./send-package.html" class="main-nav-link">
+              <ion-icon name="paper-plane" class="main-nav-icon"></ion-icon>
+              Send Package
+            </a>
+          </li>
+          <li>
+            <a href="./browse-package.html" class="main-nav-link">
+              <ion-icon name="logo-dropbox" class="main-nav-icon"></ion-icon>
+              Browse Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="search" class="main-nav-icon"></ion-icon>
+              Track Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="wallet" class="main-nav-icon"></ion-icon>
+              Wallet
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-nav-login margin-right-large">
+        <ul class="main-nav-list-login">
+          <li>
+            <a href="#" class="main-nav-link link-login"
+              ><ion-icon name="log-in"></ion-icon> Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-browse-pac">
+        <div class="container">
+          <header
+            class="flex-col-center header-browse-pac margin-bottom-medium"
+          >
+            <h1 class="primary-heading">Available Packages</h1>
+            <p>Find packages to deliver and earn on your travels.</p>
+          </header>
+          <div class="outer-browse-pac margin-bottom-medium">
+            <div class="inner-browse-pac grid">
+              <input
+                type="search"
+                name="available"
+                id="available"
+                class="input filter-destination"
+                placeholder="Filter by destination city..."
+              />
+              <div class="filters-box">
+                <select name="filter" id="filter" class="input filter">
+                  <option value="newest">Newest First</option>
+                  <option value="oldest">Oldest First</option>
+                  <option value="low-to-high">Price: Low to High</option>
+                  <option value="high-to-low">Price: High to Low</option>
+                </select>
+
+                <button type="button" class="input color btn-clear-filter">
+                  <i class="fa fa-filter" aria-hidden="true"></i> Clear Filters
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="package-card-box grid grid-col-3 margin-bottom-large">
+            <div class="package-card">
+              <div class="package-img-box">
+                <img
+                  src="./img/package1.jpg"
+                  alt="Image of the Package"
+                  class="package-img"
+                />
+              </div>
+              <div class="delivery-details">
+                <div class="posted-detail">
+                  <p class="color delivery-title">Important Letter</p>
+                  <p>Posted by Khaled Muhammed &bull; 1 hour ago</p>
+                </div>
+
+                <div class="flex-row delivery-location">
+                  <ion-icon
+                    name="location-outline"
+                    class="delivery-icon"
+                  ></ion-icon>
+                  <p>Abuja &rarr; Kano</p>
+                </div>
+                <div class="flex-row delivery-location">
+                  <i
+                    class="fa fa-balance-scale delivery-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <p>Size: Small</p>
+                </div>
+                <div class="flex-row delivery-location">
+                  <ion-icon
+                    name="barbell-outline"
+                    class="delivery-icon"
+                  ></ion-icon>
+                  <p>Weight: 0.5 kg</p>
+                </div>
+              </div>
+              <hr />
+              <div class="negotiation-box">
+                <p class="delivery-price">5000</p>
+                <div class="delivery-btn-box">
+                  <button type="button" class="btn btn-delivery btn-accept">
+                    Accept
+                  </button>
+                  <button
+                    type="button"
+                    class="btn color btn-delivery btn-negotiate"
+                  >
+                    Negotiate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="package-card">
+              <div class="package-img-box">
+                <img
+                  src="./img/package1.jpg"
+                  alt="Image of the Package"
+                  class="package-img"
+                />
+              </div>
+              <div class="delivery-details">
+                <div class="posted-detail">
+                  <p class="color delivery-title">Box of books and clothes.</p>
+                  <p>Posted by Khaled Muhammed &bull; 1 hour ago</p>
+                </div>
+
+                <div class="flex-row delivery-location">
+                  <ion-icon
+                    name="location-outline"
+                    class="delivery-icon"
+                  ></ion-icon>
+                  <p>Lagos &rarr; Abuja</p>
+                </div>
+                <div class="flex-row delivery-location">
+                  <i
+                    class="fa fa-balance-scale delivery-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <p>Size: Large</p>
+                </div>
+                <div class="flex-row delivery-location">
+                  <ion-icon
+                    name="barbell-outline"
+                    class="delivery-icon"
+                  ></ion-icon>
+                  <p>Weight: 12 kg</p>
+                </div>
+              </div>
+              <hr />
+              <div class="negotiation-box">
+                <p class="delivery-price">15000</p>
+                <div class="delivery-btn-box">
+                  <button type="button" class="btn btn-delivery btn-accept">
+                    Accept
+                  </button>
+                  <button
+                    type="button"
+                    class="btn color btn-delivery btn-negotiate"
+                  >
+                    Negotiate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="package-card">
+              <div class="package-img-box">
+                <img
+                  src="./img/package1.jpg"
+                  alt="Image of the Package"
+                  class="package-img"
+                />
+              </div>
+              <div class="delivery-details">
+                <div class="posted-detail">
+                  <p class="color delivery-title">
+                    Urgent documents in a medium-sized envel...
+                  </p>
+                  <p>Posted by Khaled Muhammed &bull; 1 hour ago</p>
+                </div>
+
+                <div class="flex-row delivery-location">
+                  <ion-icon
+                    name="location-outline"
+                    class="delivery-icon"
+                  ></ion-icon>
+                  <p>Abuja &rarr; Kano</p>
+                </div>
+                <div class="flex-row delivery-location">
+                  <i
+                    class="fa fa-balance-scale delivery-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <p>Size: Medium</p>
+                </div>
+                <div class="flex-row delivery-location">
+                  <ion-icon
+                    name="barbell-outline"
+                    class="delivery-icon"
+                  ></ion-icon>
+                  <p>Weight: 2.0 kg</p>
+                </div>
+              </div>
+              <hr />
+              <div class="negotiation-box">
+                <p class="delivery-price">9000</p>
+                <div class="delivery-btn-box">
+                  <button type="button" class="btn btn-delivery btn-accept">
+                    Accept
+                  </button>
+                  <button
+                    type="button"
+                    class="btn color btn-delivery btn-negotiate"
+                  >
+                    Negotiate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer flex-col-center">
+      <p>&copy; 2025 Sendr. All rights reserved.</p>
+      <nav>
+        <ul class="footer-nav-list">
+          <li><a href="#" class="nav-list-link">Privacy Policy</a></li>
+          <li><a href="#" class="nav-list-link">Terms of Service</a></li>
+          <li><a href="#" class="nav-list-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
