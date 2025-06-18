@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header margin-bottom-medium">
+      <div class="company-logo-box">
+        <a href="index.html" class="company-name"
+          ><ion-icon name="logo-dropbox" class="company-icon"></ion-icon>
+          Sendr</a
+        >
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="./send-package.html" class="main-nav-link">
+              <ion-icon name="paper-plane" class="main-nav-icon"></ion-icon>
+              Send Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="logo-dropbox" class="main-nav-icon"></ion-icon>
+              Browse Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="search" class="main-nav-icon"></ion-icon>
+              Track Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="wallet" class="main-nav-icon"></ion-icon>
+              Wallet
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-nav-login margin-right-large">
+        <ul class="main-nav-list-login">
+          <li>
+            <a href="#" class="main-nav-link link-login"
+              ><ion-icon name="log-in"></ion-icon> Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero margin-bottom-medium">
+        <div class="container hero-container">
+          <div class="hero-content flex-col-center">
+            <header class="hero-header">
+              <h2>Sendr: Your Package, Your Price, Your Way.</h2>
+            </header>
+            <p class="hero-description">
+              Connect with travelers heading your way. Send packages reliably
+              and affordably. Or, become a traveler and earn on your journeys!
+            </p>
+            <div class="buttons-hero">
+              <button class="btn btn-primary">
+                Send a Package
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+              <button class="btn btn-secondary color">
+                Browse Packages <i class="fa fa-truck" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how-it-work margin-bottom-large">
+        <div class="container">
+          <div class="how-it-work-content flex-col-center">
+            <header class="how-header-box text">
+              <p class="margin-bottom-small color">How It Works</p>
+              <h2 class="how-header color">Simple Steps to Send or Earn</h2>
+              <p class="how-text">
+                Sendr makes package delivery intuitive and community-driven.
+              </p>
+            </header>
+            <ol class="how-list grid grid-col-3">
+              <li class="how-list-item">
+                <div>
+                  <header class="how-list-header">
+                    <ion-icon
+                      name="paper-plane"
+                      class="how-list-icon"
+                    ></ion-icon>
+                    <h3 class="how-list-title color">1 Post Your Package</h3>
+                  </header>
+                  <p class="how-list-description">
+                    Describe your item, set your desired price, and specify the
+                    destination. Our AI can even help suggest a fair price!
+                  </p>
+                </div>
+              </li>
+              <li class="how-list-item">
+                <div>
+                  <header class="how-list-header">
+                    <ion-icon name="people" class="how-list-icon"></ion-icon>
+                    <h3 class="how-list-title color">
+                      2 Connect with Travelers
+                    </h3>
+                  </header>
+                  <p class="how-list-description">
+                    Travelers view your request. They can accept your price or
+                    negotiate. You stay in control.
+                  </p>
+                </div>
+              </li>
+              <li class="how-list-item">
+                <div>
+                  <header class="how-list-header">
+                    <ion-icon
+                      name="checkmark-circle"
+                      class="how-list-icon"
+                    ></ion-icon>
+                    <h3 class="how-list-title color">3 Secure and Track</h3>
+                  </header>
+                  <p class="how-list-description">
+                    Once agreed, payment is held securely. Track your package
+                    until it reaches its destination.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features">
+        <div class="container all-feature margin-bottom-large">
+          <div class="features-container grid grid-col-2">
+            <div class="feature-box">
+              <header class="feature-header">
+                <p class="feature-p margin-bottom-small">Features</p>
+                <h2 class="feature-heading color">Why Choose Sendr?</h2>
+                <p class="feature-text">
+                  Sendr combines technology with community to make package
+                  delivery seamless and rewarding.
+                </p>
+              </header>
+              <ul class="feature-list">
+                <li class="feature-list-item">
+                  <ion-icon name="lock" class="feature-list-icon"></ion-icon>
+                  <div class="feature-list-content">
+                    <h3 class="feature-list-title color">
+                      Secure Transactions
+                    </h3>
+                    <p>
+                      Your payment is held securely until delivery is confirmed.
+                    </p>
+                  </div>
+                </li>
+                <li class="feature-list-item">
+                  <i
+                    class="fa fa-truck feature-list-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="feature-list-content">
+                    <h3 class="feature-list-title color">Flexible Delivery</h3>
+                    <p>
+                      Find travelers already heading to your package's
+                      destination.
+                    </p>
+                  </div>
+                </li>
+                <li class="feature-list-item">
+                  <ion-icon
+                    name="analytics"
+                    class="feature-list-icon"
+                  ></ion-icon>
+                  <div class="feature-list-content">
+                    <h3 class="feature-list-title color">Smart Pricing</h3>
+                    <p>
+                      AI-powered suggestions to help you set competitive prices.
+                    </p>
+                  </div>
+                </li>
+                <li class="feature-list-item">
+                  <ion-icon name="wallet" class="feature-list-icon"></ion-icon>
+                  <div class="feature-list-content">
+                    <h3 class="feature-list-title color">Integrated Wallet</h3>
+                    <p>
+                      Easily manage payments, add funds, and withdraw earnings.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <img
+                src="./img/delivery.jpg"
+                alt="Sendr Features image"
+                class="feature-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta margin-bottom-large">
+        <div class="container flex-col-center">
+          <div class="cta-container flex-col-center text">
+            <header class="cta-header">
+              <h2 class="cta-heading color">Ready to Get Started?</h2>
+              <p>
+                Join the Sendr community today and experience a new way to send
+                and earn.
+              </p>
+            </header>
+            <div class="cta-button-box">
+              <button class="btn btn-cta btn-cta-send">
+                Send Your First Package
+              </button>
+              <button class="btn btn-cta btn-cta-travel">
+                Become a Sendr Traveler
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer flex-col-center">
+      <p>&copy; 2025 Sendr. All rights reserved.</p>
+      <nav>
+        <ul class="footer-nav-list">
+          <li><a href="#" class="nav-list-link">Privacy Policy</a></li>
+          <li><a href="#" class="nav-list-link">Terms of Service</a></li>
+          <li><a href="#" class="nav-list-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
