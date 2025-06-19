@@ -479,6 +479,29 @@ BROWSE PACKAGE PAGE
   overflow: hidden;
 
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.package-card::before {
+  content: "Posted";
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  color: #333;
+  background-color: #75dff0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.negotiating-icon {
+  color: #75dff0;
+  display: none;
+}
+
+.negotiation-active {
+  gap: 1rem;
 }
 
 .package-img-box {
