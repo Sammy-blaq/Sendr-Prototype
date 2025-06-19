@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header margin-bottom-medium">
+      <div class="company-logo-box">
+        <a href="index.html" class="company-name"
+          ><ion-icon name="logo-dropbox" class="company-icon"></ion-icon>
+          Sendr</a
+        >
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="./send-package.html" class="main-nav-link">
+              <ion-icon name="paper-plane" class="main-nav-icon"></ion-icon>
+              Send Package
+            </a>
+          </li>
+          <li>
+            <a href="./browse-package.html" class="main-nav-link">
+              <ion-icon name="logo-dropbox" class="main-nav-icon"></ion-icon>
+              Browse Package
+            </a>
+          </li>
+          <li>
+            <a href="./track-package.html" class="main-nav-link">
+              <ion-icon name="search" class="main-nav-icon"></ion-icon>
+              Track Package
+            </a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link">
+              <ion-icon name="wallet" class="main-nav-icon"></ion-icon>
+              Wallet
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-nav-login margin-right-large">
+        <ul class="main-nav-list-login">
+          <li>
+            <a href="#" class="main-nav-link link-login"
+              ><ion-icon name="log-in"></ion-icon> Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-browse-pac">
+        <div class="container margin-bottom-large">
+          <header
+            class="header-track-package flex-col-center margin-bottom-medium"
+          >
+            <h1 class="primary-heading">Track Your Package</h1>
+            <p class="text">Enter package details to find its status.</p>
+          </header>
+
+          <form action="" method="post" class="track-form">
+            <header class="header-track-package-form margin-bottom-small">
+              <h2 class="color flex-row track-form-heading">
+                <ion-icon name="funnel" class="track-icon"></ion-icon> Search
+                Filters
+              </h2>
+              <p>
+                Search by Tracking ID for precise results, or use city filters.
+              </p>
+            </header>
+
+            <div class="input-group margin-bottom-small">
+              <div class="input-box">
+                <label for="origin-city" class="label color">Origin City</label>
+                <input
+                  type="text"
+                  id="origin-city"
+                  name="origin-city"
+                  placeholder="e.g., Abuja, Kano"
+                  class="input"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <label for="destination-city" class="label color"
+                  >Destination city</label
+                >
+                <input
+                  type="text"
+                  id="destination-city"
+                  name="destination-city"
+                  placeholder="e.g., Lagos, Kaduna"
+                  class="input"
+                  required
+                />
+              </div>
+            </div>
+            <p class="text margin-bottom-small or">OR</p>
+            <div class="input-box margin-bottom-small">
+              <label for="tracking-id" class="label color">Tracking ID</label>
+              <input
+                type="text"
+                id="tracking-id"
+                name="tracking-id"
+                placeholder="e.g., SWFT000001"
+                class="input"
+              />
+            </div>
+            <div class="input-box btn-post-package-box">
+              <button type="submit" class="btn-search-package">
+                <ion-icon name="search"></ion-icon> Search Package
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer flex-col-center">
+      <p>&copy; 2025 Sendr. All rights reserved.</p>
+      <nav>
+        <ul class="footer-nav-list">
+          <li><a href="#" class="nav-list-link">Privacy Policy</a></li>
+          <li><a href="#" class="nav-list-link">Terms of Service</a></li>
+          <li><a href="#" class="nav-list-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
