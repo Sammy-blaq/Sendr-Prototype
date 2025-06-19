@@ -99,7 +99,7 @@ body {
   padding: 1.2rem 2.4rem;
   font-size: 1.8rem;
   font-weight: 500;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -125,11 +125,12 @@ COMPONENTS WITH THE SAME PROPERTIES
 *************************************
 */
 .btn-post-package,
-.btn-get-price-sug {
+.btn-get-price-sug,
+.btn-search-package {
   all: unset;
   cursor: pointer;
   padding: 1.2rem 0;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   font-size: 1.6rem;
   width: 100%;
   display: flex;
@@ -143,6 +144,11 @@ COMPONENTS WITH THE SAME PROPERTIES
 .btn-post-package:hover,
 .btn-get-price-sug:hover {
   background-color: #3b7add;
+}
+
+.header-track-package,
+.header-track-package-form {
+  font-size: 1.6rem;
 }
 
 /* HELPER/SETTINGS CLASSES */
