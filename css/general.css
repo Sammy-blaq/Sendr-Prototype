@@ -26,6 +26,16 @@ Paragraph default: 1.6
 --- 02 COLORS
 -- Primary: #4287f5
 
+--- Tints:
+#ecf3fe
+#d9e7fd
+
+--- Shades:
+#3b7add
+
+
+---- Secondary:#75dff0
+
 
 -- Greys
 #555
@@ -75,6 +85,12 @@ body {
   color: #4287f5;
 }
 
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .label {
   display: block;
   font-size: 1.4rem;
@@ -91,6 +107,13 @@ body {
 }
 .grid-col-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+
+  transition: all 0.3s ease;
 }
 
 .btn {
@@ -149,6 +172,56 @@ COMPONENTS WITH THE SAME PROPERTIES
 .header-track-package,
 .header-track-package-form {
   font-size: 1.6rem;
+}
+
+.login-form,
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.input-login,
+.input-sign-up {
+  background-color: inherit;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  text-align: left;
+  font-size: 1.4rem;
+
+  border: 1px solid #4287f5;
+  margin-bottom: 3rem;
+}
+.btn-login,
+.btn-create {
+  background-color: #4287f5;
+  width: 50%;
+  color: #fff;
+  padding: 1.5rem 3rem;
+
+  transition: all 0.4s;
+}
+
+.btn-login:hover,
+.btn-login:active,
+.btn-create:hover,
+.btn-create:active {
+  background-color: #3b7add;
+  transform: scale(1.1);
+}
+.link.sign-up,
+.link.to-login {
+  color: #4287f5;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sign-up:hover,
+.sign-up:active,
+.to-login:hover,
+.to-login:active {
+  color: #3b7add;
 }
 
 /* HELPER/SETTINGS CLASSES */
