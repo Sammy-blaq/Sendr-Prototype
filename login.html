@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLINGS -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main-login">
+      <div class="container">
+        <header class="header-login">
+          <a href="#" class="link company-name primary-heading flex-row">
+            <ion-icon name="logo-dropbox" class="company-icon"></ion-icon> SENDR
+          </a>
+          <div class="login-box margin-bottom-medium">
+            <h2 class="heading-tertiary color">Login</h2>
+            <p>Welcome Back <ion-icon name="hand"></ion-icon></p>
+          </div>
+        </header>
+        <div class="login-form-box">
+          <form action="" class="login-form">
+            <div class="inputs-box">
+              <div>
+                <label for="email" class="label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  class="input-login"
+                  placeholder="e.g,. example@example.com"
+                />
+              </div>
+              <div>
+                <label for="password" class="label">Password</label>
+                <input
+                  type="email"
+                  name="password"
+                  id=""
+                  class="input-login"
+                  placeholder="e.g,. 123456789"
+                />
+              </div>
+            </div>
+
+            <div class="inputs-box btn-box margin-bottom-medium">
+              <button type="submit" class="btn btn-login text">Login</button>
+            </div>
+
+            <div class="forgot-box">
+              <a href="#" class="link forgot-pass">Forgot Password?</a>
+              <p>OR</p>
+              <p class="text-sign-up">
+                Didn't have an account yet?
+                <a href="./sign up.html" class="link sign-up">Sign Up</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
