@@ -679,3 +679,111 @@ TRACK PACKAGE PAGE
 .or {
   font-size: 1.6rem;
 }
+
+/* 
+******************************
+LOGIN PAGE
+******************************
+*/
+
+.header-login {
+  padding: 2rem 4rem;
+}
+
+.login-box {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.login-form,
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.inputs-box {
+  width: 100%;
+}
+
+.input-login,
+.input-sign-up {
+  background-color: inherit;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  text-align: left;
+  font-size: 1.4rem;
+
+  border: 1px solid #4287f5;
+  margin-bottom: 3rem;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-login,
+.btn-create {
+  background-color: #4287f5;
+  width: 50%;
+  color: #fff;
+  padding: 1.5rem 3rem;
+
+  transition: all 0.4s;
+}
+
+.btn-login:hover,
+.btn-login:active,
+.btn-create:hover,
+.btn-create:active {
+  background-color: #3b7add;
+  transform: scale(1.1);
+}
+
+.main-login {
+  height: 100vh;
+  background-color: rgba(217, 231, 253, 0.7);
+}
+
+.forgot-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+.forgot-pass {
+  color: #4287f5;
+}
+
+.forgot-pass:hover,
+.forgot-pass:active {
+  text-decoration: underline;
+}
+
+.link.sign-up,
+.link.to-login {
+  color: #4287f5;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sign-up:hover,
+.sign-up:active,
+.to-login:hover,
+.to-login:active {
+  color: #3b7add;
+}
+
+/* 
+*******************************
+SIGN UP PAGE
+*******************************
+*/
+
+/* NOTE: the login page is mostly the copy of the Login page */
