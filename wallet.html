@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- MY FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/f4011791d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <title>Sendr &mdash; Fast & Reliable Package Delivery</title>
+  </head>
+  <body>
+    <header class="header margin-bottom-medium">
+      <div class="company-logo-box">
+        <a href="index.html" class="company-name"
+          ><ion-icon name="logo-dropbox" class="company-icon"></ion-icon>
+          Sendr</a
+        >
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="./send-package.html" class="main-nav-link">
+              <ion-icon name="paper-plane" class="main-nav-icon"></ion-icon>
+              Send Package
+            </a>
+          </li>
+          <li>
+            <a href="./browse-package.html" class="main-nav-link">
+              <ion-icon name="logo-dropbox" class="main-nav-icon"></ion-icon>
+              Browse Package
+            </a>
+          </li>
+          <li>
+            <a href="./track-package.html" class="main-nav-link">
+              <ion-icon name="search" class="main-nav-icon"></ion-icon>
+              Track Package
+            </a>
+          </li>
+          <li>
+            <a href="./wallet.html" class="main-nav-link">
+              <ion-icon name="wallet" class="main-nav-icon"></ion-icon>
+              Wallet
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-nav-login margin-right-large">
+        <ul class="main-nav-list-login">
+          <li>
+            <a href="#" class="main-nav-link link-login"
+              ><ion-icon name="log-in"></ion-icon> Login</a
+            >
+          </li>
+        </ul>
+
+        <div>
+          <button type="button" class="btn-show-profile color">
+            <ion-icon name="contact"></ion-icon>
+            Profile
+          </button>
+          <div class="profile-link-box">
+            <div class="user-box">
+              <p class="user-name color">Khaled Muhammed</p>
+              <p class="user-email">khaled@example.com</p>
+            </div>
+            <hr class="profile-line" />
+            <ul class="profile-box">
+              <li>
+                <a href="#" class="link link-profile color"
+                  ><ion-icon name="contact"></ion-icon> Profile</a
+                >
+              </li>
+              <li>
+                <a href="#" class="link link-logout color"
+                  ><ion-icon name="log-out"></ion-icon> Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-wallet">
+        <div class="container margin-bottom-medium">
+          <header class="wallet-header">
+            <div>
+              <h1 class="flex-row wallet-heading">
+                <ion-icon name="wallet"></ion-icon> Your wallet
+              </h1>
+              <p>Manage your funds and view transaction history.</p>
+            </div>
+
+            <div>
+              <p>Current Balance</p>
+              <h2 class="flex-row current-balance">
+                <i class="fa-solid fa-naira-sign"></i> 50,000.00
+              </h2>
+            </div>
+          </header>
+        </div>
+
+        <div class="container">
+          <div class="btn-action-box margin-bottom-small">
+            <button
+              type="button"
+              class="btn btn-add-action flex-row btn-action-active color"
+            >
+              <ion-icon name="download"></ion-icon> Add Funds
+            </button>
+            <button type="button" class="btn btn-withdraw-action flex-row">
+              <ion-icon name="arrow-down"></ion-icon> Withdraw
+            </button>
+            <button type="button" class="btn btn-transfer-action flex-row">
+              <ion-icon name="paper-plane"></ion-icon> Transfer
+            </button>
+          </div>
+
+          <div class="margin-bottom-medium">
+            <div class="wallet-action-box margin-bottom-small deposit-box">
+              <h2 class="color deposit-heading">Add Funds to Wallet</h2>
+              <form action="" method="post" class="wallet-form deposit-form">
+                <div class="input-box">
+                  <label for="add-amount" class="label">Amount (Naira)</label>
+                  <input
+                    type="number"
+                    name="add-amount"
+                    id="add-amount"
+                    class="input"
+                    min="0.0"
+                    step="1"
+                    placeholder="e.g., 5000"
+                  />
+                </div>
+
+                <div class="inputs-box">
+                  <button type="submit" class="btn btn-deposit flex-row">
+                    <ion-icon name="download"></ion-icon>
+                    Deposit Funds
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="wallet-action-box margin-bottom-small withdraw-box">
+              <h2 class="color withdraw-heading">Withdraw Funds</h2>
+              <form action="" method="post">
+                <div class="input-box">
+                  <label for="withdraw-amount" class="label"
+                    >Amount (Naira)</label
+                  >
+                  <input
+                    type="number"
+                    name="withdraw-amount"
+                    id="withdraw-amount"
+                    class="input"
+                    placeholder="e.g., 5000"
+                  />
+                </div>
+
+                <div class="inputs-box">
+                  <button type="submit" class="btn btn-withdraw flex-row">
+                    <ion-icon name="arrow-down"></ion-icon> Withdraw Funds
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="wallet-action-box margin-bottom-small transfer-box">
+              <h2 class="color transfer-heading">Transfer Funds</h2>
+              <form action="" method="post">
+                <div class="input-box">
+                  <label for="recipient-id" class="label"
+                    >Recipient User ID</label
+                  >
+                  <input
+                    type="text"
+                    name="transfer-amount"
+                    id="transfer-amount"
+                    class="input"
+                    placeholder="Enter Recipient user ID"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="transfer-amount" class="label"
+                    >Amount (Naira)</label
+                  >
+                  <input
+                    type="number"
+                    name="transfer-amount"
+                    id="transfer-amount"
+                    class="input"
+                    placeholder="e.g., 5000"
+                  />
+                </div>
+
+                <div class="inputs-box">
+                  <button type="submit" class="btn btn-transfer flex-row">
+                    <ion-icon name="paper-plane"></ion-icon> Transfer Funds
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="container margin-bottom-medium">
+          <div class="history-box">
+            <header class="header-history">
+              <h2 class="color">
+                <i class="fa fa-history history-icon" aria-hidden="true"></i>
+                Transaction History
+              </h2>
+              <p>Your recent wallet activity.</p>
+            </header>
+
+            <div class="transac-history-box">
+              <!-- Transaction history header -->
+              <div class="tb-title-box grid grid-col-5">
+                <p class="tb-title">Date</p>
+                <p class="tb-title">Type</p>
+                <p class="tb-title">Description</p>
+                <p class="tb-title grid-item-to-right">Amount (Naira)</p>
+                <p class="tb-title grid-item-to-center">Status</p>
+              </div>
+              <!-- Each transactions -->
+              <div class="tb-data grid grid-col-5 color">
+                <p>Jul 20, 2024 00:00</p>
+                <p>
+                  <span class="tb-data-payment">Payment Sent</span>
+                </p>
+                <p>Payment for package SWFT000001</p>
+                <p class="grid-item-to-right">
+                  <span class="payment-amount">&minus;$25.00</span>
+                </p>
+                <p class="grid-item-to-center">
+                  <span class="tb-data-status">Completed</span>
+                </p>
+              </div>
+              <!--  -->
+              <div class="tb-data grid grid-col-5 color">
+                <p>Jan 14, 2023 22:05</p>
+                <p><span class="tb-data-deposit"> Deposit </span></p>
+                <p>Initial account funding</p>
+                <p class="grid-item-to-right">
+                  <span class="deposit-amount">&plus;$100.00</span>
+                </p>
+                <p class="grid-item-to-center">
+                  <span class="tb-data-status">Completed</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="footer flex-col-center">
+      <p>&copy; 2025 Sendr. All rights reserved.</p>
+      <nav>
+        <ul class="footer-nav-list">
+          <li><a href="#" class="nav-list-link">Privacy Policy</a></li>
+          <li><a href="#" class="nav-list-link">Terms of Service</a></li>
+          <li><a href="#" class="nav-list-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
