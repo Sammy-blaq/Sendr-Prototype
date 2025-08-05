@@ -138,7 +138,7 @@
 
 .link-login:hover,
 .link-login:active {
-  background-color: #75dff0;
+  background-color: #42d4f5;
   color: #333;
 }
 
@@ -202,7 +202,7 @@ HERO SECTION
 }
 
 .btn-secondary:hover {
-  background-color: #75dff0;
+  background-color: #42d4f5;
   box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -227,7 +227,7 @@ HERO SECTION
 
 .how-list {
   list-style: none;
-  column-gap: 4rem;
+  column-gap: 5rem;
 }
 
 .how-list-item {
@@ -248,17 +248,19 @@ HERO SECTION
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  line-height: 1.2;
   margin-bottom: 2rem;
 }
 
 .how-list-description {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
 .how-list-icon {
   padding: 1rem;
+  font-size: 3rem;
   background-color: #4287f5;
   color: #fff;
   border-radius: 50%;
@@ -277,7 +279,7 @@ HERO SECTION
 
 .feature-p {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #fff;
   background-color: #4287f5;
   padding: 1rem 2rem;
@@ -285,14 +287,13 @@ HERO SECTION
 }
 
 .feature-heading {
-  font-size: 4.6rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
 }
 
 .feature-text {
   font-size: 1.8rem;
   width: 90%;
-  margin-bottom: 2rem;
 }
 
 .feature-list {
@@ -311,14 +312,14 @@ HERO SECTION
 .feature-list-icon {
   align-self: flex-start;
   font-size: 2rem;
-  color: #75dff0;
+  color: #42d4f5;
 }
 
 .feature-list-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .feature-list-title {
@@ -385,7 +386,7 @@ HERO SECTION
 
 .footer {
   padding: 5rem 0;
-  background-color: #f7f7f7;
+  background-color: #f0f0f0;
   gap: 2rem;
   font-size: 1.6rem;
 }
@@ -442,11 +443,9 @@ SEND PACKAGE PAGE
 .input-box {
   width: 100%;
   margin-bottom: 2rem;
-  overflow: hidden;
 }
 
 .input {
-  /* all: unset; */
   display: block;
   width: 100%;
   padding: 1rem 2rem;
@@ -474,7 +473,7 @@ SEND PACKAGE PAGE
 
 .pricing-assistant-icon {
   font-size: 2.4rem;
-  color: #75dff0;
+  color: #42d4f5;
 }
 
 .pricing-heading {
@@ -522,13 +521,23 @@ BROWSE PACKAGE PAGE
   gap: 1rem;
 }
 
+.filter {
+  cursor: pointer;
+}
+
 .btn-clear-filter {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   background-color: #f7f7f7;
 
   display: none;
+}
+
+.btn-clear-filter:hover {
+  background-color: #f0f0f0;
 }
 
 .package-card-box {
@@ -549,7 +558,7 @@ BROWSE PACKAGE PAGE
   text-transform: capitalize;
   font-size: 1.4rem;
   color: #333;
-  background-color: #75dff0;
+  background-color: #42d4f5;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   position: absolute;
@@ -558,7 +567,7 @@ BROWSE PACKAGE PAGE
 }
 
 .negotiating-icon {
-  color: #75dff0;
+  color: #42d4f5;
   display: none;
 }
 
@@ -646,7 +655,7 @@ BROWSE PACKAGE PAGE
 }
 
 .btn-negotiate:hover {
-  background-color: #75dff0;
+  background-color: #42d4f5;
 }
 
 /* 
@@ -673,7 +682,7 @@ TRACK PACKAGE PAGE
 }
 
 .track-icon {
-  color: #75dff0;
+  color: #42d4f5;
 }
 
 .or {
@@ -733,3 +742,142 @@ SIGN UP PAGE
 */
 
 /* NOTE: the login page is mostly the copy of the Login page */
+
+/* 
+*******************************
+WALLET PAGE
+*******************************
+*/
+.wallet-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.4rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(170deg, #4287f5, rgb(67, 39, 225));
+
+  border-radius: 1rem;
+  color: #fff;
+
+  box-shadow: 0 10px 10px rgba(67, 39, 255, 0.2);
+}
+
+.wallet-heading {
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.current-balance {
+  font-size: 4.6rem;
+  font-weight: 600;
+}
+
+.btn-action-box {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Determine the active wallet action button */
+.btn-action-active {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-action-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem 2rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-deposit:hover,
+.btn-deposit:visited,
+.btn-withdraw:hover,
+.btn-withdraw:visited,
+.btn-transfer:hover,
+.btn-transfer:visited {
+  background-color: #3b7add;
+}
+
+.wallet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.withdraw-box,
+.transfer-box {
+  display: none;
+}
+
+.history-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header-history {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.history-icon {
+  color: #4287f5;
+}
+
+.transac-history-box {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.tb-title,
+.tb-data {
+  padding: 2rem 0;
+}
+
+.tb-title-box,
+.tb-data:not(:last-child) {
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.tb-data-payment {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #f00;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.tb-data-deposit {
+  background-color: rgba(0, 255, 0, 0.2);
+  color: #018e01;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.payment-amount {
+  color: #f00;
+}
+
+.deposit-amount {
+  color: #018e01;
+}
+
+.tb-data-status {
+  background-color: rgba(66, 135, 245, 0.2);
+  color: #3b7add;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
