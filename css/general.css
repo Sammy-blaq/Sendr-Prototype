@@ -34,8 +34,7 @@ Paragraph default: 1.6
 #3b7add
 
 
----- Secondary:#75dff0
-
+---- Secondary:#42d4f5
 
 -- Greys
 #555
@@ -63,7 +62,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  background-color: #f3f3f3;
+  background-color: #f0f0f0;
 }
 
 /* *************************** */
@@ -102,11 +101,23 @@ body {
   display: grid;
 }
 
+.grid-item-to-right {
+  justify-self: end;
+}
+
+.grid-item-to-center {
+  justify-self: center;
+}
+
 .grid-col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 .grid-col-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-5 {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .link:link,
@@ -117,7 +128,7 @@ body {
 }
 
 .btn {
-  all: unset;
+  /* all: unset; */
   cursor: pointer;
   padding: 1.2rem 2.4rem;
   font-size: 1.8rem;
@@ -125,6 +136,7 @@ body {
   border-radius: 1rem;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: none;
 }
 
 .flex-col-center {
@@ -150,11 +162,6 @@ COMPONENTS WITH THE SAME PROPERTIES
 .btn-post-package,
 .btn-get-price-sug,
 .btn-search-package {
-  all: unset;
-  cursor: pointer;
-  padding: 1.2rem 0;
-  border-radius: 1rem;
-  font-size: 1.6rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -163,6 +170,11 @@ COMPONENTS WITH THE SAME PROPERTIES
   text-align: center;
   background-color: #4287f5;
   color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 1.2rem 0;
+  border-radius: 1rem;
+  font-size: 1.6rem;
 }
 .btn-post-package:hover,
 .btn-get-price-sug:hover {
@@ -174,6 +186,7 @@ COMPONENTS WITH THE SAME PROPERTIES
   font-size: 1.6rem;
 }
 
+/* Login/ sign up page */
 .login-form,
 .sign-up-form {
   display: flex;
@@ -224,7 +237,39 @@ COMPONENTS WITH THE SAME PROPERTIES
   color: #3b7add;
 }
 
-/* HELPER/SETTINGS CLASSES */
+/* Wallet page */
+.btn-add-action,
+.btn-withdraw-action,
+.btn-transfer-action {
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  color: inherit;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.deposit-heading,
+.withdraw-heading,
+.transfer-heading {
+  font-size: 2.4rem;
+}
+
+.btn-deposit,
+.btn-withdraw,
+.btn-transfer {
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  background-color: #4287f5;
+  color: #fff;
+}
+
+/* 
+******************************
+HELPER/SETTINGS CLASSES 
+******************************
+*/
 .margin-right-large {
   margin-right: 10rem !important;
 }
